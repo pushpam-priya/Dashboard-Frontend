@@ -6,6 +6,8 @@ import PageButton from "../../components/PageButton";
 import { Link, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
 import { signupSchema } from "../../schemas";
+import axios from "axios";
+
 import AuthImg from "../../image/Frameauth-img.png";
 import logo from "../../image/image 2logo-img.png";
 import './auth.css';
@@ -42,11 +44,25 @@ const Signup = () => {
   } = useFormik({
     initialValues: initialValues,
     validationSchema: signupSchema,
-    onSubmit: (values, action) => {
-      console.log(values);
-      action.resetForm();
-      navigate("/Login", { replace: true });
+    // onSubmit: (values, action) => {
+    //   console.log(values);
+    //   action.resetForm();
+    //   navigate("/Login", { replace: true });
+    // },
+
+    onSubmit: async (values,action) => {
+      try {
+        // Make a POST request to the backend API for user registration
+        const response = await axios.post("/api/users/register", values);
+        console.log(response.data); // Log the response from the backend
+        action.resetForm();
+        navigate("/Login", { replace: true }); // Redirect to login page upon successful registration
+      } catch (error) {
+        console.error("Registration failed:", error.response.data.error);
+        // Handle registration failure here, display error message to the user
+      }
     },
+    
   });
 
   return (
