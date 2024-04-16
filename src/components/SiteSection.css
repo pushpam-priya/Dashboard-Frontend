@@ -1,0 +1,173 @@
+.main{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  
+  .arrow-section{
+    display: flex;
+    align-items: center;
+  }
+  
+  .arrow-section h4{
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(32, 33, 35, 1);
+  }
+  
+  /* .arrowBackIcon{
+    height: 20%;
+    width: 20%;
+    padding: 20px;
+  } */
+  
+  .hr{
+    color: gray;
+    margin: 0px 20px;
+  }
+  
+  .addImageText{
+    float: left;
+    font-weight: 400;
+    font-size: 18px;
+    padding:0px 20px;
+  }
+  
+  .upload-button{
+    /* border: 2px solid rgba(250, 164, 60, 1); */
+    padding: 4px 20px;
+    border-radius: 18px;
+    cursor: pointer;
+  }
+  
+  .inputfield{
+    /* border: 2px solid rgb(207, 207, 27); */
+   width: 100%;  
+   /* border-radius: 50px; */
+   /* margin: 20px 200px 0px 20px; */
+  }
+  
+  .inputfields {
+    /* border: 2px solid red; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  
+  .inputfield label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: start;
+    /* margin-left: 2px; */
+  }
+  
+  .inputfield input, textarea,
+  .inputfield select {
+    /* width: 100%; */
+    /* border: 2px solid rgb(47, 208, 47); */
+    height: 60px;
+    padding: 5px;
+    width: 50%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-right: 4px;
+    font-size: 16px;
+    font-family: 'Outfit';
+  }
+
+  .inputfield-div{
+    /* border: 2px solid rgb(35, 211, 202); */
+    display: flex;
+  }
+
+  .inputfield-subdiv{
+    /* border: 2px solid rgb(163, 46, 17); */
+    width: 100%;
+    margin-right: 2px;
+
+  }
+
+  .inputfield-subdiv input{
+    width: 98%;
+  }
+
+  textarea{
+    width: 98%;
+    font-size: 15px;
+    resize: none;
+    height: 120px;
+    padding-top: 5px;
+  }
+
+  .inputfield h5{
+    text-align: start;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  
+  .buttons{
+    padding: 10px;
+    display: flex;
+    margin-top: 20px;
+    
+  }
+  
+  .cancel-button, .add-button{
+    padding: 10px 30px;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cancel-button{
+    background-color: rgba(214, 210, 210, 1);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    margin-right: 8px;
+  
+  }
+  
+  .add-button{
+    font-size: 16px;
+    background-color: #f7a43c;
+    color: white;
+    margin-left: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  
+  }
+
+  #title-sub-div, #postal-sub-div, #phone-sub-div, #division-sub-div, #description-sub-div{
+    /* border: 2px solid rgb(168, 23, 179); */
+    width: 50%;
+  }
+
+  #description-sub-div input{
+    height: 250px;
+    font-family: "Outfit", sans-serif;
+  }
+
+  #description-sub-div::placeholder{
+    font-family: "Outfit", sans-serif;
+  }
+
+  #main-Division{
+    /* border: 2px solid rgb(163, 46, 17); */
+    width: 100%;
+  }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield; /* Firefox */
+}

@@ -1,0 +1,73 @@
+.card-box{
+  width: 380px;
+  height: 140px;
+  display: flex;
+  margin: 10px 8px;
+  align-items: center;
+  border-radius: 10px; /* Assuming "border-radius: 10" meant 10 pixels */
+
+  background: linear-gradient(180deg, #FF77AD 22.99%, #FEC3D2 113.52%);
+}
+
+
+.card{
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 1;
+  /* width: 50%; */
+  /* border: 2px solid white; */
+}
+
+/* .card-section1{
+  border: 2px solid rgb(209, 136, 27);
+
+}; */
+
+.card-section2{
+  /* border: 2px solid rgb(22, 137, 148); */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border: 0;
+  margin-left: 10px;
+}
+
+.title{
+  font-family: "Outfit", sans-serif;
+  /* border: 2px solid rgb(15, 72, 77); */
+  text-align: start;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.count{
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  margin: 0;
+  margin-top: 5px;
+  color: black;
+}
+
+/* @media (max-width: 1450px){
+  .card-box{
+      width: 48%;
+  }
+} */
+
+@media (max-width: 500px){
+  .card-box{
+      width: 80%;
+  }
+}
+
+
+/* @media (min-width: 1500px){
+  .card-box{
+      width: 400px;
+  }
+} */

@@ -1,0 +1,21 @@
+.content{
+  display: flex;
+  gap: 1;
+  /* width: 100%; */
+  
+}
+
+.Layout-content-section1 {
+  margin: 5px;
+  height: 150vh;
+}
+
+.Layout-content-section2 {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  margin: 5px;
+  height: 150vh;
+  border-radius: 10px;
+  flex: 1;
+  overflow-y: auto;
+
+}

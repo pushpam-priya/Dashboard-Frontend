@@ -1,0 +1,77 @@
+.main{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  
+  .arrow-section{
+    display: flex;
+    align-items: center;
+  }
+  
+  .arrow-section h4{
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(32, 33, 35, 1);
+  }
+  
+  /* .arrowBackIcon{
+    height: 20%;
+    width: 20%;
+    padding: 20px;
+  } */
+  
+  .hr{
+    color: gray;
+    margin: 0px 20px;
+  }
+  
+.detail-section{
+    /* border: 2px solid green; */
+    justify-content: space-between;
+    display: flex;
+    background-color: rgba(255, 159, 7, 0.05);
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.detail-section-div{
+    /* border: 2px solid rgb(120, 6, 186); */
+    display: flex;
+    width: 21%;
+    flex-direction: column;
+    /* justify-content: space-between; */
+
+}
+
+.detail-section-subdiv{
+    /* border: 2px solid rgb(121, 119, 5); */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.subdiv2{
+    margin-top: 20px;
+
+}
+
+.detail-section-subdiv h5, .detail-section-subdiv h6{
+    margin: 0;
+}
+
+.detail-section-subdiv h5{
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.detail-section-subdiv h6{
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.87);
+    text-align: start;
+}

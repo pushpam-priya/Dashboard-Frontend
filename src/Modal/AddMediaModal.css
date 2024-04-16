@@ -1,0 +1,99 @@
+.modal-modal{
+  /* border: 2px solid rgb(42, 80, 21); */
+ width: 100%;
+  position: relative;
+
+}
+
+.box-modal-class{
+  /* border: 2px solid rgb(20, 17, 182); */
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  height: 600px;
+  position: absolute;
+  top: 10%;
+  left: 30%;
+ 
+}
+
+.content-modal-class{
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.dandd-txt{
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Outfit',sans-serif;
+}
+
+.back-button-modal-class{
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 800;
+  margin-right: 100px;
+  background-color: transparent;
+  border: none;
+}
+
+.image-dropzone{
+  /* border: 1px solid rgb(77, 77, 77); */
+  border-radius: 2px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.drag-and-drop{
+  border: 0.5px solid rgb(180, 180, 180);
+  display: flex;
+  border-radius: 6px;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 223px;
+}
+
+.upload-input-class{
+  width: 84px;
+  height: 22px;
+  border-radius: 33px;
+  padding: 12px 20px;
+  border: 1px solid rgba(255, 159, 7, 1);
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.name-sortby-class{
+  /* border: 2px solid greenyellow; */
+  width: 100%;
+}
+
+.name-input-class, .sortBy-input-class{
+
+  height: 42px;
+  width: 100%;
+  padding: 0;
+  border-radius: 6px;
+  border: 0.5px solid rgb(180, 180, 180);
+}
+
+.add-img-text-class{
+  /* border: 2px solid rgb(184, 25, 25); */
+  width: 100%;
+  margin-top: 10px;
+}
+
+#file-upload{
+  display: none;
+}
