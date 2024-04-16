@@ -30,6 +30,21 @@ const WarehouseSiteSection = () => {
 
   console.log(data);
 
+  const fetchMainWarehouses = async () => {
+    try {
+        const response = await axios.get('http://localhost:5003/api/warehouse/main');
+        setData(response.data);
+
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        // Handle error scenarios
+    }
+};
+
+useEffect(() => {
+    fetchMainWarehouses();
+}, []);
+
 
   // const data = [
   //   { id: 1, site: '169th St, Bayside, NY', mainWarehouse: 'No', listedOn: '10-10-2023, 10:30 AM' },
