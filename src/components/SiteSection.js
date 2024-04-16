@@ -47,7 +47,7 @@ const SiteSection = ({ name, btn }) => {
 
     // const handleSubmit = async (values, action) => {
     //     try {
-    //         const response = await fetch('http://localhost:5002/api/warehouse', {
+    //         const response = await fetch('http://localhost:5003/api/warehouse', {
     //             method: 'POST',
     //             headers: {
     //                 'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ const SiteSection = ({ name, btn }) => {
                 mainWarehouse: isCheckboxChecked,
             };
             console.log("Sent data", dataToSend);
-            const response = await axios.post('http://localhost:5002/api/warehouse', dataToSend);
+            const response = await axios.post('http://localhost:5003/api/warehouse', dataToSend);
             console.log("Data from backend", response.data); // Log the response from the backend
             action.resetForm();
             alert('Submitted!');

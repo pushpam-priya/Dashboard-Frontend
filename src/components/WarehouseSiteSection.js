@@ -20,7 +20,7 @@ const WarehouseSiteSection = () => {
   const fetchData = async () => {
     try {
       // Fetch data from backend API using axios
-      const response = await axios.get('http://localhost:5002/api/warehouse');
+      const response = await axios.get('http://localhost:5003/api/warehouse');
       setData(response.data); // Update state with fetched data
     } catch (error) {
       console.error('Error fetching data:', error);
