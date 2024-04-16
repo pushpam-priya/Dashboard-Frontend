@@ -170,9 +170,9 @@ const CreateDivisionSection = ({ name, btn1, btn2, mainWarehouses }) => {
               <option value="warehouse2">Warehouse 2</option>
               <option value="warehouse3">Warehouse 3</option> */}
               {mainWarehouses.map((warehouse) => (
-                <option key={warehouse._id} value={warehouse.title}>
-                  {console.log(warehouse.title)}
-                  console.log(mainWarehouses);
+                <option key={warehouse._id} value={warehouse.street}>
+                  {warehouse.street}
+                  {/* console.log(mainWarehouses); */}
                 </option>
               ))}
             </select>
