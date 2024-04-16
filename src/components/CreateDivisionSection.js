@@ -26,7 +26,7 @@ const CreateDivisionSection = ({ name, btn1, btn2 }) => {
   const handleSubmitBackend = async (values, action) =>{
     try {
       console.log("Sent data",values);
-      const response = await axios.post('http://localhost:5002/api/division', values);
+      const response = await axios.post('http://localhost:5003/api/division', values);
       console.log("Data from backend",response);
       action.resetForm(); 
       setSelectedFile(null);
