@@ -8,7 +8,7 @@ import { useFormik } from "formik";
 import { createDivisionSchema } from "../schemas";
 import axios from "axios";
 
-const CreateDivisionSection = ({ name, btn1, btn2 }) => {
+const CreateDivisionSection = ({ name, btn1, btn2, mainWarehouses }) => {
   const initialValues = {
     title: "",
     warehouse: "",
@@ -166,9 +166,15 @@ const CreateDivisionSection = ({ name, btn1, btn2 }) => {
               onBlur={handleBlur}
             >
               <option value="">Select Warehouse</option>
-              <option value="warehouse1">Warehouse 1</option>
+              {/* <option value="warehouse1">Warehouse 1</option>
               <option value="warehouse2">Warehouse 2</option>
-              <option value="warehouse3">Warehouse 3</option>
+              <option value="warehouse3">Warehouse 3</option> */}
+              {mainWarehouses.map((warehouse) => (
+                <option key={warehouse._id} value={warehouse.title}>
+                  {console.log(warehouse.title)}
+                  console.log(mainWarehouses);
+                </option>
+              ))}
             </select>
             {errors.warehouse && touched.warehouse ? (
               <p style={{ color: "red", marginTop: "-5px", float: "left" }}>
